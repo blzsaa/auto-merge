@@ -12,6 +12,7 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
         fetch-depth: 0
+        token: ${{ secrets.PAT_TOKEN }}
     - name: Commit files
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
